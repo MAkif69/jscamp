@@ -10,12 +10,12 @@ let customer = new Customer(1,"12345");
 
 //prototyping
 customer.name="Murat Kurtboğan"
-console.log(customer.name)
+// console.log(customer.name)
 
 Customer.bisey="Bişey"
-console.log(Customer.bisey)
+// console.log(Customer.bisey)
 
-console.log(customer.customerNumber)
+// console.log(customer.customerNumber)
 
 class IndividualCustomer extends Customer{
         constructor(firtsName,id,customerNumber){
