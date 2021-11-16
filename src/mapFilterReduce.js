@@ -7,6 +7,22 @@ let cart = [
     {id:6, productName:"Pot", quantity:5, unitPrice:150},
 ]
 
+//Sepetteki ürünü ekrana basma-MAP
+
+cart.map(product=>{
+    //console.log(product.productName + " : " + product.unitPrice * product.quantity)
+})
+
+
+//filitreleme yapmak-FILTER
+
+let quantityOver2 = cart.filter(product=> product.quantity>2);
+//console.log(quantityOver2)
+
+//REDUCE
+
+let total = cart.reduce((acc,product)=>acc+ product.unitPrice, 0)
+//console.log(total)
 
 
 function addToCart(sepet) {
@@ -15,7 +31,7 @@ function addToCart(sepet) {
 
 addToCart(cart)
 
-console.log(cart)
+//console.log(cart)
 
 let sayi = 10
 
@@ -24,4 +40,4 @@ function sayiTopla(number) {
 }
 
 sayiTopla(sayi)
-console.log(sayi)
+//console.log(sayi)
